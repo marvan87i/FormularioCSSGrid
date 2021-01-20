@@ -1,0 +1,112 @@
+*{
+   box-sizing: border-box;
+}
+body{
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    padding:0 1.5em;
+}
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+.logo span{
+    color: #b70e21;
+    
+}
+.contact-wrapp{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .1);
+    
+}
+.contact-wrapp >*{
+    padding: 1em;
+}
+.contactForm{
+    background-color: #222222;
+}
+.contactForm form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contactForm form .block{
+    grid-column:span 2;
+}
+.contactForm form p{
+    margin: 0;
+    padding: 1em;
+
+}
+
+.contactForm form button,
+.contactForm form input,
+.contactForm form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #d63031;
+    outline: none;
+    color:#000;
+}
+.contactForm form button{
+    background: #b70e21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 5px;
+}
+.contactForm form button:hover,
+.contactForm form button:focus{ /*Focus para interactuar con el teclado */
+    background-color: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out ;
+    outline: none;
+}
+.contactInfo{
+    background:#0000 ;
+
+}
+.contactInfo h4,
+.contactInfo ul,
+.contactInfo p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.contactInfo ul {
+    list-style: none;
+    padding:0;
+}
+.contactInfo ul li{
+    padding: .2em;
+}
+.contactInfo .me{
+   margin-left: .5em;
+}
+
+
+/*Large SCREEN*/
+@media(min-width:700px){
+    body{
+        padding: 0 4rem;
+    }
+    .contact-wrapp{
+        display: grid;
+      grid-template-columns: 2fr 1fr;  
+    }
+    .contact-wrapp>*{
+        padding: 2em;
+    }
+    .contactInfo h4,
+    .contactInfo ul,
+    .contactInfo p{
+        padding: 1em;
+        text-align: left;
+    }
+}
